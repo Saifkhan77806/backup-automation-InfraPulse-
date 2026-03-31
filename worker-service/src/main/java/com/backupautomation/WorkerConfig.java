@@ -17,7 +17,7 @@ public class WorkerConfig {
         WorkflowServiceStubs service =
                 WorkflowServiceStubs.newInstance(
                         WorkflowServiceStubsOptions.newBuilder()
-                                .setTarget("192.168.1.100:7233") // 🔥 SAME SERVER
+                                .setTarget("host.docker.internal:7233") // 🔥 SAME SERVER
                                 .build()
                 );
 
