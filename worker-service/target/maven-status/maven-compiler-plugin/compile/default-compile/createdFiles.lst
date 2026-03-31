@@ -1,6 +1,6 @@
+com\backupautomation\WorkerApplication.class
 com\backupautomation\BackupActivity.class
 com\backupautomation\BackupWorkflowImpl.class
 com\backupautomation\WorkerConfig.class
 com\backupautomation\BackupWorkflow.class
 com\backupautomation\BackupActivityImpl.class
-com\backupautomation\WorkerApplication.class
