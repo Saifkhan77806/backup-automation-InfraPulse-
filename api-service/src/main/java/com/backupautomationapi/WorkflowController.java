@@ -36,4 +36,21 @@ public class WorkflowController {
 
         return "🔥 Started backup for " + system;
     }
+
+    @GetMapping("/mongo")
+    public String startMongo(@RequestParam String dbName) {
+
+        ITWorkflow workflow =
+                client.newWorkflowStub(
+                        ITWorkflow.class,
+                        WorkflowOptions.newBuilder()
+                                .setTaskQueue("it-ops-queue") // 🔥 Mongo queue
+                                .setWorkflowId("it-ops-" + UUID.randomUUID())
+                                .build()
+                );
+
+        WorkflowClient.start(workflow::run, dbName);
+
+        return "🔥 Mongo backup started for " + dbName;
+    }
 }

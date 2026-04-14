@@ -14,7 +14,7 @@ public class TemporalConfig {
         return WorkflowClient.newInstance(
                 WorkflowServiceStubs.newInstance(
                         WorkflowServiceStubsOptions.newBuilder()
-                                .setTarget("0.0.0.0:7233") // 🔥 TEMPORAL IP
+                                .setTarget("localhost:7233") // 🔥 TEMPORAL IP
                                 .build()
                 )
         );

@@ -1,0 +1,6 @@
+com\example\backupautomationit\ITActivityImpl.class
+com\example\backupautomationit\ITActivity.class
+com\example\backupautomationit\ITWorkflowImpl.class
+com\example\backupautomationit\ITWorkflow.class
+com\example\backupautomationit\BackupautomationitApplication.class
+com\example\backupautomationit\WorkerConfig.class
